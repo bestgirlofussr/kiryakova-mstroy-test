@@ -1,17 +1,17 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../components/HelloWorld.vue'
+import TreeView from '@/views/TreeView.vue';
+import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView,
+    component: TreeView,
   },
-]
+];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
-})
+});
 
-export default router
+export default router;
